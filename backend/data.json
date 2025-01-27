@@ -1,0 +1,350 @@
+{
+  "classiche": [
+    {
+      "name": "Monster Energy",
+      "owned": true
+    },
+    {
+      "name": "Monster Lo Carb",
+      "owned": false
+    },
+    {
+      "name": "Monster Absolutely Zero",
+      "owned": false
+    },
+    {
+      "name": "Monster Zero",
+      "owned": false
+    },
+    {
+      "name": "Monster Assault",
+      "owned": false
+    },
+    {
+      "name": "Monster Import",
+      "owned": false
+    },
+    {
+      "name": "Monster Import Light",
+      "owned": false
+    },
+    {
+      "name": "Monster Cuba-Libre",
+      "owned": false
+    },
+    {
+      "name": "Monster Cuba-Lima",
+      "owned": false
+    },
+    {
+      "name": "Monster Mule",
+      "owned": false
+    },
+    {
+      "name": "Monster M-80",
+      "owned": false
+    },
+    {
+      "name": "Monster Khaos",
+      "owned": false
+    },
+    {
+      "name": "Monster Ripper",
+      "owned": false
+    },
+    {
+      "name": "Monster Gronk",
+      "owned": false
+    },
+    {
+      "name": "Monster Nitrous Super Dry",
+      "owned": false
+    },
+    {
+      "name": "Monster Nitrous Killer B",
+      "owned": false
+    },
+    {
+      "name": "Monster Nitrous Anti-Gravity",
+      "owned": false
+    },
+    {
+      "name": "Monster Nitrous Black Ice",
+      "owned": false
+    }
+  ],
+  "ultra": [
+    {
+      "name": "Monster Ultra",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Paradise",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Red",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Watermelon",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Fiesta",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Fiesta Mango",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Blue",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Black",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Rosa",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Citron",
+      "owned": false
+    },
+    {
+      "name": "Monster Ultra Gold",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Purple",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Peachy Keen",
+      "owned": true
+    },
+    {
+      "name": "Monster Sunrise",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Strawberry Dreams",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Ruby Red",
+      "owned": true
+    },
+    {
+      "name": "Monster Ultra Vice Guava",
+      "owned": false
+    },
+    {
+      "name": "Monster Ultra Blue Hawaiaan",
+      "owned": false
+    }
+  ],
+  "nitro": [
+    {
+      "name": "Monster Nitro SuperDry",
+      "owned": true
+    },
+    {
+      "name": "Monster Nitro Cosmic Peach",
+      "owned": true
+    }
+  ],
+  "rehab": [
+    {
+      "name": "Monster Rehab Lemonade",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Orangeade",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Peach",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Pink Lemonade",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Rojo Tea",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Green Tea",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab Protean",
+      "owned": false
+    },
+    {
+      "name": "Monster Rehab",
+      "owned": false
+    }
+  ],
+  "reserve": [
+    {
+      "name": "Monster Reserve",
+      "owned": false
+    }
+  ],
+  "java": [
+    {
+      "name": "Monster Java Vanilla Light",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Kona Blend",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Irish Blend",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Irish Creme",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Mean Bean",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Loca Moca",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Cappuccino",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Toffee",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Originale",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Swiss Chocolate",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Chai-Hai",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Russian Blend",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Nut-Up",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Big Black",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Lo-Ball",
+      "owned": false
+    },
+    {
+      "name": "Monster Java Salted-Caramel",
+      "owned": false
+    },
+    {
+      "name": "Monster Espresso & Cream",
+      "owned": false
+    },
+    {
+      "name": "Monster Espresso Vanilla",
+      "owned": false
+    }
+  ],
+  "juiced": [
+    {
+      "name": "Monster Juiced Mango Loco",
+      "owned": false
+    },
+    {
+      "name": "Monster Juice Khaos",
+      "owned": false
+    },
+    {
+      "name": "Monster Juice Pacific Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Juiced Ripper",
+      "owned": false
+    },
+    {
+      "name": "Monster Juice Pipeline Punch",
+      "owned": false
+    }
+  ],
+  "punch": [
+    {
+      "name": "Monster Punch Mixxd",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    },
+    {
+      "name": "Monster Punch",
+      "owned": false
+    }
+  ],
+  "dragon": [
+    {
+      "name": "Monster Dragon Tea",
+      "owned": false
+    }
+  ],
+  "dedicate": [
+    {
+      "name": "Monster Dedicate",
+      "owned": false
+    }
+  ]
+}
