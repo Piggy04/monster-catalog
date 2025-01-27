@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster rehab</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Riferimento al CSS principale -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.1em;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        #monster-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        .monster-item {
+            background: linear-gradient(135deg, #ff0033, #ff6666);
+            padding: 15px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .monster-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px #f77474;
+        }
+
+        .monster-image {
+            width: 55px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .monster-name {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monster rehab</h1>
+        <a href="../index.html">Torna alla Home</a>
+
+        <div id="monster-list"></div>
+    </div>
+
+    <script>
+        function fetchrehab() {
+            fetch('http://localhost:3000/api/monsters')  // Richiesta al server per ottenere le Monster
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Dati ricevuti:", data);
+                    const rehabMonsters = data.rehab;
+                    const monsterList = document.getElementById('monster-list');
+                    monsterList.innerHTML = '';
+
+                    rehabMonsters.forEach(monster => {
+                        const monsterItem = document.createElement('div');
+                        monsterItem.className = 'monster-item';
+                        monsterItem.innerHTML = `
+                            <img src="images/${monster.name.toLowerCase().replace(/ /g, "-")}.png" 
+                                 alt="${monster.name}" class="monster-image">
+                            <span class="monster-name">${monster.name}</span>
+                            <input type="checkbox" 
+                                   ${monster.owned ? 'checked' : ''} 
+                                   data-monster="${monster.name}" 
+                                   onchange="updateMonsterOwnership(event)">
+                        `;
+                        monsterList.appendChild(monsterItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Errore nel recupero dei dati:', error);
+                    alert("Errore nel caricamento dei dati. Verifica che il server sia in esecuzione.");
+                });
+        }
+
+        function updateMonsterOwnership(event) {
+            const monsterName = event.target.getAttribute('data-monster');
+            const owned = event.target.checked;
+            const category = 'rehab';
+
+            fetch('http://localhost:3000/api/monsters', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    category: category,
+                    monster: monsterName,
+                    owned: owned
+                })
+            })
+            .then(response => response.text())
+            .then(message => {
+                console.log(message);
+            })
+            .catch(error => {
+                console.error('Errore nel salvataggio dei dati:', error);
+                alert('Errore nel salvataggio dello stato della Monster.');
+            });
+        }
+
+        window.onload = function() {
+            fetchrehab();
+        };
+    </script>
+</body>
+</html>
