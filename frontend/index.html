@@ -1,0 +1,94 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Monster</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+
+        #owned-count h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .category-item {
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transform: skewX(-10deg);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category-item:hover {
+            transform: skewX(0deg) scale(1.05);
+            box-shadow: 0 8px 15px rgba(255, 204, 0, 0.7);
+        }
+
+        .classiche { background: linear-gradient(135deg, #ff6600, #ff9933); }
+        .ultra { background: linear-gradient(135deg, #6600ff, #9933ff); }
+        .nitro { background: linear-gradient(135deg, #0099ff, #33ccff); }
+        .rehab { background: linear-gradient(135deg, #ff0033, #ff6666); }
+        .reserve { background: linear-gradient(135deg, #33cc33, #66ff66); }
+        .java { background: linear-gradient(135deg, #996633, #cc9966); }
+        .juiced { background: linear-gradient(135deg, #ff6600, #ffcc00); }
+        .punch { background: linear-gradient(135deg, #cc0066, #ff3399); }
+        .dragon { background: linear-gradient(135deg, #3333cc, #6666ff); }
+        .dedicate { background: linear-gradient(135deg, #009966, #00cc99); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Catalogo Monster</h1>
+        <div id="owned-count">
+            <h3>Monster possedute: <span id="owned-number">0</span></h3>
+        </div>
+        <div class="categories">
+            <a href="classiche/index.html" class="category-item classiche">Monster Classiche</a>
+            <a href="ultra/index.html" class="category-item ultra">Monster Ultra</a>
+            <a href="nitro/index.html" class="category-item nitro">Monster Nitro</a>
+            <a href="rehab/index.html" class="category-item rehab">Monster Rehab</a>
+            <a href="reserve/index.html" class="category-item reserve">Monster Reserve</a>
+            <a href="java/index.html" class="category-item java">Monster Java</a>
+            <a href="juiced/index.html" class="category-item juiced">Monster Juiced</a>
+            <a href="punch/index.html" class="category-item punch">Monster Punch</a>
+            <a href="dragon/index.html" class="category-item dragon">Monster Dragon Tea</a>
+            <a href="dedicate/index.html" class="category-item dedicate">Monster Dedicate</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
