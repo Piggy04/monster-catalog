@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3b;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #3d4aff; /* Colore verde Monster */
+    text-align: center;
+}
+
+h3 {
+    color: #a1a1a1;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    background-color: #00a859;
+    color: rgb(59, 59, 59);
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.category-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.category-list li a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #00a859;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
