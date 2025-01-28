@@ -1,10 +1,18 @@
 const express = require('express');
-const fs = require('fs');
-const path = require('path');
+const cors = require('cors'); // Importa il modulo cors
+
 const app = express();
-const port = 3000;
-const cors = require('cors');
-app.use(cors());
+
+app.use(cors()); // Usa il middleware cors
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 app.use(express.json());
 
