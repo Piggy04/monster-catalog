@@ -96,7 +96,7 @@
 
     <script>
         function fetchclassiche() {
-            fetch('http://localhost:3000/api/monsters')  // Richiesta al server per ottenere le Monster
+            fetch('https://monster-catalog.onrender.com/api/monsters')  // Richiesta al server per ottenere le Monster
                 .then(response => response.json())
                 .then(data => {
                     console.log("Dati ricevuti:", data);
