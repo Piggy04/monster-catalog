@@ -2,7 +2,7 @@
 
 // Funzione per ottenere i dati delle Monster dal backend
 function getMonsters() {
-    fetch('http://localhost:3000/api/monsters')
+    fetch('https://monster-catalog.onrender.com/api/monsters')
         .then(response => response.json())
         .then(data => {
             // Verifica che i dati siano correttamente recuperati
@@ -35,7 +35,7 @@ function displayMonsters(data) {
 
 // Funzione per segnare una Monster come posseduta o non posseduta
 function toggleMonster(category, monster, owned) {
-    fetch('http://localhost:3000/api/monsters', {
+    fetch('https://monster-catalog.onrender.com/api/monsters', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
