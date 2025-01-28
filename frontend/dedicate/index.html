@@ -96,7 +96,7 @@
 
     <script>
         function fetchdedicate() {
-            fetch('http://localhost:3000/api/monsters')  // Richiesta al server per ottenere le Monster
+            fetch('https://monster-catalog.onrender.com/api/monsters')  // Richiesta al server per ottenere le Monster
                 .then(response => response.json())
                 .then(data => {
                     console.log("Dati ricevuti:", data);
@@ -130,7 +130,7 @@
             const owned = event.target.checked;
             const category = 'dedicate';
 
-            fetch('http://localhost:3000/api/monsters', {
+            fetch('https://monster-catalog.onrender.com/api/monsters', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
